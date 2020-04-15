@@ -1,0 +1,57 @@
+<div class="filter">
+    <mat-form-field appearance="outline">
+        <mat-label>Filter</mat-label>
+        <input matInput required (keyup)="filter($event)" placeholder="Filter here">
+    </mat-form-field>
+</div>
+
+<mat-table [dataSource]="products$">
+    <ng-container matColumnDef="plu">
+        <mat-header-cell mat-header-cell *matHeaderCellDef>PLU</mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let data" data-label="PLU"> {{ data.plu }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="ordercode">
+        <mat-header-cell mat-header-cell *matHeaderCellDef>Order Code</mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let data" data-label="Order Code"> {{ data.ordercode }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="desc40">
+        <mat-header-cell mat-header-cell *matHeaderCellDef>Description</mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let data" data-label="Description"> {{ data.desc40 }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="deptcode">
+        <mat-header-cell mat-header-cell *matHeaderCellDef>Department Code</mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let data" data-label="Department Code"> {{ data.deptcode }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="deptname">
+        <mat-header-cell mat-header-cell *matHeaderCellDef>Department Name</mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let data" data-label="Department Code"> {{ data.deptname }} </mat-cell>
+    </ng-container>
+
+
+    <ng-container matColumnDef="supplier">
+        <mat-header-cell mat-header-cell *matHeaderCellDef>Supplier</mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let data" data-label="Supplier"> {{ data.supplier }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="cost">
+        <mat-header-cell mat-header-cell *matHeaderCellDef>Cost</mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let data" data-label="Cost"> {{ data.cost }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="ctnqty">
+        <mat-header-cell mat-header-cell *matHeaderCellDef>CTNQTY</mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let data" data-label=" CTNQTY"> {{ data.ctnqty }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="sell">
+        <mat-header-cell mat-header-cell *matHeaderCellDef>Sell</mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let data" data-label=" Sell"> {{ data.sell }} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="columnsToDisplay"></mat-header-row>
+    <mat-row *matRowDef="let data; columns: columnsToDisplay"></mat-row>
+</mat-table>

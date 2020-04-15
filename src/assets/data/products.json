@@ -1,0 +1,46 @@
+[
+  {
+    "plu": "00000093228114",
+    "ordercode": "NSA114",
+    "desc40": "WIMMERS CREAMING SODA 600ML",
+    "deptcode": 3,
+    "deptname": "SOFT DRINKS",
+    "supplier": "NSABV",
+    "cost": 25.65,
+    "ctnqty": 15,
+    "sell": 3.29
+  },
+  {
+    "plu": "00000093280181",
+    "ordercode": "NSA181",
+    "desc40": "WIMMERS LEMON LIME & BITTERS 600ML",
+    "deptcode": 3,
+    "deptname": "SOFT DRINKS",
+    "supplier": "NSABV",
+    "cost": 25.95,
+    "ctnqty": 15,
+    "sell": 3.29
+  },
+  {
+    "plu": "00000093280198",
+    "ordercode": "NSA198",
+    "desc40": "WIMMERS DOUBLE SARSAPARILLA 600ML",
+    "deptcode": 3,
+    "deptname": "SOFT DRINKS",
+    "supplier": "NSABV",
+    "cost": 25.95,
+    "ctnqty": 15,
+    "sell": 3.29
+  },
+  {
+    "plu": "00000093280204",
+    "ordercode": "NSA204",
+    "desc40": "WIMMERS RASPBERRY LEMONADE 600ML",
+    "deptcode": 3,
+    "deptname": "SOFT DRINKS",
+    "supplier": "NSABV",
+    "cost": 25.95,
+    "ctnqty": 15,
+    "sell": 3.29
+  }
+]
